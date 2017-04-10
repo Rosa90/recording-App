@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7496C2EC1E954B3A00A6B7B3 /* audioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7496C2EB1E954B3A00A6B7B3 /* audioController.swift */; };
 		74E730861E941F3400EE1B1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E730851E941F3400EE1B1F /* AppDelegate.swift */; };
 		74E730881E941F3400EE1B1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E730871E941F3400EE1B1F /* ViewController.swift */; };
 		74E7308B1E941F3400EE1B1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74E730891E941F3400EE1B1F /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		74E730901E941F3400EE1B1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74E7308E1E941F3400EE1B1F /* LaunchScreen.storyboard */; };
 		74E7309B1E941F3400EE1B1F /* recordingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E7309A1E941F3400EE1B1F /* recordingAppTests.swift */; };
 		74E730A61E941F3400EE1B1F /* recordingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E730A51E941F3400EE1B1F /* recordingAppUITests.swift */; };
+		9811E8E51E98009B00CDD651 /* VideoLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9811E8E41E98009B00CDD651 /* VideoLauncher.swift */; };
+		9823044E1E96C34D0065AD63 /* audioRemoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9823044D1E96C34D0065AD63 /* audioRemoteController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7496C2EB1E954B3A00A6B7B3 /* audioController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = audioController.swift; sourceTree = "<group>"; };
 		74E730821E941F3400EE1B1F /* recordingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = recordingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E730851E941F3400EE1B1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74E730871E941F3400EE1B1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,8 @@
 		74E730A11E941F3400EE1B1F /* recordingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = recordingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E730A51E941F3400EE1B1F /* recordingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recordingAppUITests.swift; sourceTree = "<group>"; };
 		74E730A71E941F3400EE1B1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9811E8E41E98009B00CDD651 /* VideoLauncher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoLauncher.swift; path = ../VideoLauncher.swift; sourceTree = "<group>"; };
+		9823044D1E96C34D0065AD63 /* audioRemoteController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = audioRemoteController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				74E730851E941F3400EE1B1F /* AppDelegate.swift */,
+				9811E8E41E98009B00CDD651 /* VideoLauncher.swift */,
 				74E730871E941F3400EE1B1F /* ViewController.swift */,
+				7496C2EB1E954B3A00A6B7B3 /* audioController.swift */,
+				9823044D1E96C34D0065AD63 /* audioRemoteController.swift */,
 				74E730891E941F3400EE1B1F /* Main.storyboard */,
-				74E7308C1E941F3400EE1B1F /* Assets.xcassets */,
-				74E7308E1E941F3400EE1B1F /* LaunchScreen.storyboard */,
 				74E730911E941F3400EE1B1F /* Info.plist */,
+				74E7308E1E941F3400EE1B1F /* LaunchScreen.storyboard */,
+				74E7308C1E941F3400EE1B1F /* Assets.xcassets */,
 			);
 			path = recordingApp;
 			sourceTree = "<group>";
@@ -193,6 +202,7 @@
 				TargetAttributes = {
 					74E730811E941F3400EE1B1F = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 6GRYCLPWB8;
 						ProvisioningStyle = Automatic;
 					};
 					74E730951E941F3400EE1B1F = {
@@ -259,7 +269,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9823044E1E96C34D0065AD63 /* audioRemoteController.swift in Sources */,
 				74E730881E941F3400EE1B1F /* ViewController.swift in Sources */,
+				9811E8E51E98009B00CDD651 /* VideoLauncher.swift in Sources */,
+				7496C2EC1E954B3A00A6B7B3 /* audioController.swift in Sources */,
 				74E730861E941F3400EE1B1F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,7 +427,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6GRYCLPWB8;
 				INFOPLIST_FILE = recordingApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = recording.rosa.recordingApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -426,7 +441,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6GRYCLPWB8;
 				INFOPLIST_FILE = recordingApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = recording.rosa.recordingApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -507,6 +524,7 @@
 				74E730AC1E941F3400EE1B1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74E730AD1E941F3400EE1B1F /* Build configuration list for PBXNativeTarget "recordingAppTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +533,7 @@
 				74E730AF1E941F3400EE1B1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74E730B01E941F3400EE1B1F /* Build configuration list for PBXNativeTarget "recordingAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +542,7 @@
 				74E730B21E941F3400EE1B1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
